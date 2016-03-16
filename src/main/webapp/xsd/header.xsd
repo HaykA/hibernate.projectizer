@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<xs:schema id="header"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:pro="http://www.projectizer.com/header"
+  targetNamespace="http://www.projectizer.com/header"
+  elementFormDefault="qualified">
+  
+  <xs:complexType name="_entry">
+    <xs:all>
+      <xs:element name="key" type="xs:string"/>
+      <xs:element name="value" type="xs:string"/>
+    </xs:all>
+  </xs:complexType>
+  
+  <xs:complexType name="_map">
+    <xs:sequence minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="entry" type="pro:_entry"/>  
+    </xs:sequence>
+  </xs:complexType>
+    
+  <xs:element name="header">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="map" type="pro:_map"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>

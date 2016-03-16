@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test xmlns="http://www.projectizer.com/test"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.projectizer.com/test ../../xsd/test.xsd">
+  <human age="25" name="Jay"/>
+  <human age="23" name="Merry"/>
+  <human age="24" name="Jolie"/>
+  <human age="32" name="Bert"/>
+  <human age="33" name="Nick"/>
+</test>

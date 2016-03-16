@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<header xmlns="http://www.projectizer.com/header"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.projectizer.com/header ../../xsd/header.xsd">
+  <map>
+    <entry>
+      <key>Settings</key>
+      <value>Settings</value>
+    </entry>
+    <entry>
+      <key>Performance</key>
+      <value>Performance</value>
+    </entry>
+  </map>
+</header>

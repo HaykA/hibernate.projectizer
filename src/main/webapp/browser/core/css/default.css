@@ -1,0 +1,663 @@
+@CHARSET "UTF-8";
+
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:200,200italic,300,300italic,400,400italic,600,600italic,700,700italic,900);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+@media screen and (max-width: 480px) {
+  .above-xs {
+    display: none !important;
+  }
+  
+  .signin-container {
+    width: 98%;
+    margin: 1%;
+    padding: 2%;
+  }
+  
+  .signin-container input[type="text"],
+  .signin-container input[type="number"],
+  .signin-container input[type="password"],
+  .signin-container select {
+    margin-bottom: 2%;
+  }
+  
+  .center-container {
+   padding-left: 7.5px;
+   padding-right: 7.5px;
+   
+  }
+  
+  .pro-h1 {
+    font-size: 9.75vw;
+  }
+
+  .pro-h3 {
+    font-size: 7vw;
+  }
+  
+  .pro-tile-4 {
+   width: 98%;
+   margin: 1%;
+  }
+  
+  
+}
+
+.email {
+    margin-bottom: 3px;
+  }
+  
+@media screen and (min-width: 481px) {
+  .signin-container {
+    width: 451px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 0 15px 0 15px;
+  }
+  
+  .signin-container input[type="text"],
+  .signin-container input[type="number"],
+  .signin-container input[type="password"],
+  .signin-container select {
+    margin-bottom: 10px;
+  }
+  
+  .center-container {
+   background: url('../../../images/core/left-borderbg.jpg') repeat-y;
+   padding-left: 47.5px;
+   padding-right: 7.5px;
+  }
+  
+  .email-word {
+    display: none
+  }
+  
+  .pro-tile-4 {
+   width: 271.25px;
+   margin: 7.5px;
+  }
+}
+
+.ellipsis-1 {
+   text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    max-width: 256px;
+}
+
+.pro-project-tile>h4 {
+   padding-bottom: 5px;
+}
+
+@media screen and (max-width: 767px) {
+   .center-container {
+    margin-top: 0;
+   }
+   
+   
+   #navigation .navbar-header {
+    background: url('../../../images/core/navbg.jpg') #6c4e37;
+    background-size: 100px 100%;
+  }
+  .navbar-inverse .navbar-toggle:hover,
+  .navbar-inverse .navbar-toggle:focus,
+  #navigation .navbar-collapse {
+    background-color: #402815;
+  }
+  
+  #navigation .collapse > ul > li.active a,
+#navigation .collapse > ul > li.active a:hover,
+#navigation .collapse > ul > li.active a:active,
+#navigation .collapse > ul > li.active a:visited,
+#navigation .collapse > ul > li.active a:focus {
+   background-color: #1f140e;
+   color: #fff;
+}
+
+#navigation .sr-only 
+}
+
+@media screen and (min-width: 768px) {
+
+
+#navigation {
+   background: url('../../../images/core/navbg.jpg') #6c4e37;
+   background-size: 100px 100%;
+}
+
+   #navigation {
+    border-radius: 0 0 4px 4px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+   }
+   
+   #navigation .collapse > ul > li.active a,
+#navigation .collapse > ul > li.active a:hover,
+#navigation .collapse > ul > li.active a:active,
+#navigation .collapse > ul > li.active a:visited,
+#navigation .collapse > ul > li.active a:focus {
+   background: url('../../../images/core/navbgh.jpg') rgba(0,0,0,0.7);
+   background-size: 100px 103%;
+   color: #fff;
+}
+   
+   .center-container {
+    margin-top: 54px;
+   }
+}
+
+.pro-h1,
+.pro-h3 {
+   word-wrap: break-word;
+}
+
+@media screen and (min-width: 992px) {
+   body.fillbg {
+  background: url('../../../images/core/bg.jpg') #e6e6e6 fixed;
+}
+}
+
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 1199px) {
+  .center-container {
+    width: 100%;
+  }
+}
+
+.center-container {
+   font-family: "Titillium Web";
+   background-color: #fff;
+}
+
+.pro-row,
+.user-tile-1 {
+   float: left;
+   width: 100%;
+   margin-bottom: 7.5px;
+}
+
+.user-tile-1 .profile {
+   float: left;
+   width: 256px;
+   height: 256px;
+   margin-right: 15px;
+   margin-bottom: 0;
+}
+
+.user-tile-1 .company {
+   width: 46px;
+   height: 46px;
+   margin-bottom: 5px;
+}
+
+.pro-tile-4 {
+float:left;
+}
+
+.pro-tile-4 .panel {
+   border: none;
+   margin-bottom: 0;
+}
+
+.pro-tile-4 .panel .panel-heading {
+   margin: 0;
+   border: none;
+   color: #fff;
+}
+
+.pro-tile-4 .panel-heading {
+   padding: 10px;
+}
+
+.pro-tile-4 .panel-primary .panel-heading {
+   border: 1px solid #337ab7;
+   background-color: #337ab7;
+}
+
+.pro-tile-4 .panel-default .panel-heading {
+   border: 1px solid #777;
+   background-color: #777;
+}
+
+.pro-tile-4 .panel-info .panel-heading {
+   border: 1px solid #5bc0de;
+   background-color: #5bc0de;
+}
+
+.pro-tile-4 .panel-success .panel-heading {
+   border: 1px solid #5cb85c;
+    background-color: #5cb85c
+}
+
+.pro-tile-4 .panel-warning .panel-heading {
+   border: 1px solid #f0ad4e;
+   background-color: #f0ad4e
+}
+
+.pro-tile-4 .panel-danger .panel-heading {
+   border: 1px solid #d9534f;
+   background-color: #d9534f
+}
+
+.pro-tile-4 .panel-pro .panel-heading {
+   border: 1px solid #6c4e37;
+   background-color: #6c4e37
+}
+
+.pro-tile-4 .thumbnail {
+   margin: 0;
+}
+
+.pro-tile-4 .panel-title {
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-bottom: 2px;
+}
+
+.pro-tile-4 .panel-body {
+   border-left: 1px solid #d0dbdd;
+   border-right: 1px solid #d0dbdd;
+}
+
+.pro-tile-4 .panel-body img {
+   float:left;
+   margin-right: 5px;
+}
+
+.pro-tile-4 code,
+.pro-tile-4 address,
+.pro-tile-4 time {
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.pro-tile-4 .panel-body {
+   height: 111px;
+   padding: 7.5px;
+}
+
+.pro-tile-4 .panel-footer {
+   background-color: #e9eeef;
+   padding: 5px 7.5px;
+   border: 1px solid #d0dbdd;
+}
+
+
+.pro-tile-4 .icon {
+   margin-right: 5px;
+}
+
+
+.brand-name {
+   font-family: "Pacifico";
+}
+
+.pro-status {
+   margin-bottom: 15px;
+}
+
+.pro-date {
+   background-color: #fff;
+   color: #000;
+   /*border: 1px solid rgb(250,235,204);*/
+}
+
+dl.time {
+   margin-left: 5px;
+   margin-bottom: 0;
+}
+
+dl.time dd {
+   margin-bottom: 5px;
+}
+
+.pro-breadcrumb {
+   margin: auto -7.5px;
+}
+
+.suitcase-color {
+   color: #6c4e37;
+}
+
+.pro-success {
+   background-color: #6c4e37;
+   color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .center-container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 0 10px #888888;
+  }
+}
+
+.pro-project-tile {
+   width: 271.25px;
+   background-color: #e9eeef;
+   border: 1px solid #d0dbdd;
+   float: left;
+   margin: 7.5px;
+   border-radius: 5px;
+   padding: 10px;
+   height: 168px;
+}
+
+.pro-project-tile h4 {
+   margin: 0 0 10px 0;
+}
+
+.pro-project-tile img {
+   float: left;
+   margin-right: 10px;
+}
+
+.pro-project-tile address,
+.pro-project-tile time,
+.pro-project-tile code {
+  font-family: "Titillium Web";
+  font-weight: none;
+  margin-bottom: 0;
+  float: left;
+}
+
+.line {
+   text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    max-width: 160.25px;
+    -webkit-line-clamp: 1;
+}
+
+.pro-project-tile a {
+   clear: left;
+}
+
+.pro-project-tile .label {
+   padding: 0 3px;
+   border-radius: 0;
+   vertical-align: middle;
+}
+
+
+#navigation {
+   margin-bottom: 0;
+}
+
+.pro-theme-color {
+   color: #367466;
+   /*color: #459280;*/
+}
+
+
+
+.center-container h1 {
+   margin-top: 15px;
+   margin-left: 7.5px;
+}
+
+.tab-pane {
+   padding: 7.5px 0;
+}
+
+.img256 {
+   width: 256px;
+   height: 256px;
+   margin-right: 15px;
+   margin-bottom: 0;
+}
+
+
+
+.float-left {
+   float: left;
+}
+
+.pro-image-description {
+   margin-top: 0;
+   padding-top: 10px;
+}
+
+.pro-image-description address {
+   margin-bottom: 0;
+   font-size: 1.5em;
+}
+
+.pro-image-description h3 {
+   margin-top: 0;
+}
+
+
+.primary-color {
+   color: #337ab7;
+}
+
+.signin-container h1 {
+   margin: 0 0 10px 0;
+   font-family: "Titillium Web";
+}
+
+
+
+
+
+#navigation div>a,
+#navigation div>a:visited,
+#navigation .collapse > ul > li > a,
+#navigation .collapse > ul > li > a:visited {
+   color: #d1b8a5;
+}
+
+#navigation div>a:hover,
+#navigation div>a:active,
+#navigation div>a:focus,
+#navigation .collapse > ul > li > a:hover,
+#navigation .collapse > ul > li > a:active,
+#navigation .collapse > ul > li > a:focus {
+   color: #fff;
+}
+
+.signin-container input[type="text"],
+.signin-container input[type="number"],
+.signin-container input[type="password"],
+  .signin-container select {
+  height: 48px;
+  font-family: "Titillium Web";
+  font-size: 1.5em;
+}
+
+
+
+.navbar .btn {
+   border: none;
+   display: block;
+   width: 100%;
+   text-align: right;
+   border-radius: 0;
+}
+
+.signin-container {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px #888888;
+} 
+
+.navbar .profile {
+   padding: 5px;
+}
+
+.navbar .profile img {
+   margin-right: 5px;
+}
+
+.fillsigninbg {
+			background: url('../../../images/core/signinbg.jpg');
+			background-size: 100%;
+}
+
+.pro {
+   font-family: "Titillium Web";
+}
+
+.pro-disabled span,
+.pro-disabled span:hover,
+.pro-disabled span:active,
+.pro-disabled span:visited,
+.pro-disabled span:focus,
+.pro-disabled a,
+.pro-disabled a:hover,
+.pro-disabled a:active,
+.pro-disabled a:visited,
+.pro-disabled a:focus {
+   color: #d6d6d6;
+}
+
+.pro-pagination a,
+.pro-pagination a.icon {
+   font-family: "Titillium Web";
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.pro-pagination>li>a {
+   padding: 4px 10px;
+}
+
+.pro-pagination {
+   margin: 0;
+}
+
+.pro-pagination>li>a.icon {
+   padding: 4px 8px;
+}
+
+.pro-input-short {
+   width: 65px;
+}
+
+.pro-pagination-tool input,
+.pro-pagination-tool button,
+.pro-pagination-tool select,
+.pro-pagination-tool label {
+   height: 28px;
+   font-family: "Titillium Web";
+   font-size: 13px;
+   vertical-align: middle;
+}
+
+.pro-pagination-tool label {
+   font-weight: normal;
+   margin: 0;
+   padding: 4px 10px;
+}
+
+.pro-pagination-tool input,
+.pro-pagination-tool button {
+   padding: 4px 10px;
+}
+
+.pro-pagination-tool select {
+   padding: 0 10px;
+}
+
+.pro-pagination-toolset {
+   float: left;
+   margin-right: 5px;
+}
+
+.pro-pagination-tool {
+   vertical-align: middle;
+   float: left;
+}
+
+.pro-pagination-tool input {
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+}
+
+.pro-pagination-tool button {
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+   margin-left: -1px; 
+}
+
+.pro-alert .alert {
+  background-color: #b9c8ca;
+  border-color: #243335;
+  color: #243335;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.pro-alert {
+  font-family: "Titillium Web";
+  font-size: 1.25em;
+  width: 412px;
+}
+
+.pro-alert strong {
+  font-weight: 600;
+}
+
+.my-container {
+	margin-top: 52px;
+}
+
+.my-container article {
+	margin: 15px;
+	padding: 15px;
+	background-color: #fff;
+}
+
+#main-menu,
+#main-menu a {
+	z-index: 1000;
+}
+
+
+
+table tr>td.content-middle {
+	vertical-align: middle;
+}
+
+#main-menu {
+	margin-bottom: 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+.logo-image {
+	width: 100%;
+}
+
+.brand {
+	
+
+}
+
+.brand>h1 {
+	font-family: Satisfy;
+	margin: 0;
+	padding: 15px;
+	color: #fff;
+}
+
+.cursor-default {
+	cursor: default;
+}
+
+.pushbottom {
+	margin-bottom: 15px;
+}

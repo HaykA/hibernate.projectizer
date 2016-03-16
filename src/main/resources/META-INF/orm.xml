@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entity-mappings xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm
+   http://xmlns.jcp.org/xml/ns/persistence/orm_2_1.xsd" version="2.1">
+   <named-query name="Customer.findAuthCustomer">
+      <query>
+         select a from AuthCustomer a
+         where a.email = :email and a.password = :password
+      </query>
+   </named-query>
+   <named-query name="Contractor.findAuthContractor">
+      <query>
+         select a from AuthContractor a
+         where a.email = :email and a.password = :password
+      </query>
+   </named-query>
+   <named-query name="Contractor.findManagedByMeProjects">
+      <query>
+         select p from Project p
+         where p.manager = :contractor
+      </query>
+   </named-query>
+   <named-query name="Admin.findAuthAdmin">
+      <query>
+         select a from AuthAdmin a
+         where a.email = :email and a.password = :password
+      </query>
+   </named-query>
+   <named-query name="Customer.findProject">
+      <query>
+         select p from Project p
+         where p.customer = :customer and p.id = :id
+      </query>
+   </named-query>
+   <named-query name="Customer.getProjectCount">
+      <query>
+         select count(p) from Project p
+         where p.customer = :customer
+      </query>
+   </named-query>
+   <named-query name="Country.findAll">
+      <query>
+         Select c from Country c
+         order by c.name
+      </query>
+   </named-query>
+   <named-query name="Country.getCount">
+      <query>
+         Select count(c) from Country c
+      </query>
+   </named-query>
+   <named-query name="Language.findAll">
+      <query>
+         Select l from Language l
+         order by l.name
+      </query>
+   </named-query>
+   <named-query name="Maintenance.trackCountryMetaData">
+      <query>
+         select new com.projectizer.maintenance.TableMetaData(count(c), max(c.id)) from Country c
+      </query>
+   </named-query>
+   
+</entity-mappings>

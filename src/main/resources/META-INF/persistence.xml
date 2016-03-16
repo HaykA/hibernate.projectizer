@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<persistence version='2.1'
+   xmlns='http://xmlns.jcp.org/xml/ns/persistence'
+   xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+   xsi:schemaLocation='http://xmlns.jcp.org/xml/ns/persistence
+   http://www.oracle.com/webfolder/technetwork/jsc/xml/ns/persistence/persistence_2_1.xsd'>
+   <persistence-unit name='projectizer'>
+      <non-jta-data-source>java:/comp/env/jdbc/projectizer</non-jta-data-source>
+      <class>com.projectizer.entities.Contractor</class>
+      <class>com.projectizer.entities.Country</class>
+      <class>com.projectizer.entities.Customer</class>
+      <class>com.projectizer.entities.Language</class>
+      <class>com.projectizer.entities.Project</class>
+      <class>com.projectizer.entities.Skill</class>
+      <class>com.projectizer.valueobjects.ContactHyperlink</class>
+      <class>com.projectizer.valueobjects.ContactNumber</class>
+      <class>com.projectizer.valueobjects.ContractorProfile</class>
+      <class>com.projectizer.valueobjects.Cost</class>
+      <class>com.projectizer.valueobjects.Performance</class>
+      <class>com.projectizer.core.entities.AuthCustomer</class>
+      <class>com.projectizer.core.entities.AuthContractor</class>
+      <class>com.projectizer.core.entities.AuthAdmin</class>
+      <class>com.projectizer.valueobjects.Address</class>
+      <class>com.projectizer.valueobjects.UserSettings</class>
+      <class>com.projectizer.entities.Company</class>
+      <class>com.projectizer.entities.Contract</class>
+      <properties>
+         <property name='hibernate.show_sql' value='true'/>
+         <property name='hibernate.format_sql' value='true'/>
+         <property name='hibernate.use_sql_comments' value='true'/>
+      </properties>
+   </persistence-unit>
+</persistence>
